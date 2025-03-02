@@ -35,7 +35,7 @@
   </script>
 </head>
 
-<body class="bg-bg-main mx-auto min-h-screen pt-6">
+<body class="bg-bg-main mx-auto min-h-screen py-6">
   <header class="mx-auto my-0 max-w-xxl mb-5">
     <nav class="bg-white flex justify-between py-4 px-6  items-center rounded-2xl">
       <div class="flex gap-3 items-end">
@@ -60,8 +60,8 @@
     </nav>
   </header>
 
-  <main class="mx-auto my-0 max-w-xxl flex">
-    <section class="w-3/4 bg-white ">
+  <main class="mx-auto my-0 max-w-xxl flex gap-6">
+    <section class="w-3/4 bg-white rounded-2xl">
       <div class=" flex justify-between gap-6  mb-8  p-6">
         <div class="flex items-center gap-5 bg-bg-main py-8 pr-5 pl-8 rounded-xl ">
           <div class=" flex items-center gap-5 bg-white rounded-full p-4">
@@ -78,14 +78,16 @@
             </h2>
           </div>
         </div>
-        <div id="blog" class="flex lin-background gap-5 flex-grow px-10 py-8 items-center rounded-xl ">
-          <div>
-            <img src="assets/board.png" alt="">
+        <a class="flex-1" href="blogs.html">
+          <div id="blog" class="flex lin-background gap-5 flex-grow px-10 py-8 items-center rounded-xl ">
+            <div>
+              <img src="assets/board.png" alt="">
+            </div>
+            <div class="text-2xl text-white">
+              Discover Something <br> New Today!
+            </div>
           </div>
-          <div class="text-2xl text-white">
-            Discover Something <br> New Today!
-          </div>
-        </div>
+        </a>
         <div class="flex items-center gap-5 bg-bg-main py-8 pr-5 pl-6 rounded-xl">
           <div class="">
             <i class="fa-solid fa-calendar-days p-4 bg-white rounded-full"></i>
@@ -233,9 +235,13 @@
 
       </div>
     </section>
-    <section>
-    </section>
 
+
+    <section class="bg-white rounded-2xl w-1/4 text-center p-6 flex flex-col items-center">
+      <p class="text-xl font-medium mb-4" ><i class="fa-solid fa-clock-rotate-left"></i>  Activity Log</p>
+      <button class="bg-pr-blue text-white px-5 py-2 rounded-lg card-btn hover:animate-pulse mb-[14px]">Clear History</button>
+      <hr class="mb-9" style="border-top: dashed 1px; width: 100%; opacity: 0.2; color: rgba(55, 82, 253, 0.20);" />
+    </section>
   </main>
   <script src="scripts/script.js"></script>
 </body>

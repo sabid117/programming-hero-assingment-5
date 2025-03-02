@@ -2,35 +2,54 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development Board</title>
-    <link rel="shortcut icon" href="assets/logo.png">
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Development Board</title>
+  <link rel="shortcut icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles/styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/8a8a5c78c3.js" crossorigin="anonymous"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8a8a5c78c3.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'clifford': '#da373d',
+            'text-blue': '#00303C',
+            'bg-main': '#F4F7FF',
+            'pr-blue': '#3752FD',
+          },
+          maxWidth: {
+            'xxl': '1536px',
+          },
         }
-    </script>
+      }
+    }
+  </script>
 </head>
 
-<body>
-
+<body class="bg-bg-main mx-auto min-h-screen py-6">
+  <header class="mx-auto my-0 max-w-xxl mb-5">
+    <nav class="bg-white flex justify-between py-4 px-6  items-center rounded-2xl">
+      <div class="flex gap-3 items-end">
+        <img src="assets/logo.png" alt="">
+        <h1 class="text-4xl"> <span class="font-light">Dev</span><span class="font-bold">Board</span></h1>
+      </div>
+      <div class="flex gap-6 items-center">
+        <a href="index.html"><button class="bg-pr-blue text-white px-5 py-2 rounded-lg card-btn hover:animate-pulse">Back to Desk</button></a>
+      </div>
+    </nav>
+  </header>
+  <main class="mx-auto my-0 max-w-xxl mb-8">
+    <h1 class="font-extrabold text-4xl text-center">Blogs</h1>
+  </main>
   <script src="scripts/script.js"></script>
 </body>
 
