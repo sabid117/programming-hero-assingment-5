@@ -5,8 +5,8 @@ const date = new Date().toLocaleDateString("en-US", {
   day: "numeric",
 });
 
-const parts = date.split(", ");
+const dateSplit = date.split(", ");
 
 document.getElementById(
   "date"
-).innerHTML = `${parts[0]}<br>${parts[1]}, ${parts[2]}`;
+).innerHTML = `${dateSplit[0]} , <br> <strong>${dateSplit[1]}</strong> <strong>${dateSplit[2]}</strong>`;
